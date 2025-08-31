@@ -1,0 +1,182 @@
+[0m22:05:10.856176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039cd5a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10489bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10489ada0>]}
+
+
+============================== 22:05:10.858554 | 598c7121-63d3-4501-80b2-cccd0f2134c1 ==============================
+[0m22:05:10.858554 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:05:10.858899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ngyibin/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:05:10.867420 [info ] [MainThread]: dbt version: 1.9.2
+[0m22:05:10.867647 [info ] [MainThread]: python version: 3.10.17
+[0m22:05:10.867826 [info ] [MainThread]: python path: /opt/homebrew/anaconda3/envs/elt/bin/python3.10
+[0m22:05:10.867994 [info ] [MainThread]: os info: macOS-15.6-arm64-arm-64bit
+[0m22:05:11.806881 [info ] [MainThread]: Using profiles dir at /Users/ngyibin/.dbt
+[0m22:05:11.807267 [info ] [MainThread]: Using profiles.yml file at /Users/ngyibin/.dbt/profiles.yml
+[0m22:05:11.807474 [info ] [MainThread]: Using dbt_project.yml file at /Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/dbt_project.yml
+[0m22:05:11.807671 [info ] [MainThread]: adapter type: bigquery
+[0m22:05:11.807842 [info ] [MainThread]: adapter version: 1.9.1
+[0m22:05:11.858907 [info ] [MainThread]: Configuration:
+[0m22:05:11.859233 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:05:11.859423 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:05:11.859600 [info ] [MainThread]: Required dependencies:
+[0m22:05:11.859806 [debug] [MainThread]: Executing "git --help"
+[0m22:05:11.875774 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:05:11.876390 [debug] [MainThread]: STDERR: "b''"
+[0m22:05:11.876622 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:05:11.876866 [info ] [MainThread]: Connection:
+[0m22:05:11.877137 [info ] [MainThread]:   method: oauth
+[0m22:05:11.877320 [info ] [MainThread]:   database: eigenai
+[0m22:05:11.877492 [info ] [MainThread]:   execution_project: eigenai
+[0m22:05:11.877657 [info ] [MainThread]:   schema: austin_bikeshare_demo
+[0m22:05:11.877814 [info ] [MainThread]:   location: US
+[0m22:05:11.877973 [info ] [MainThread]:   priority: interactive
+[0m22:05:11.878136 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:05:11.878294 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:05:11.878501 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:05:11.878696 [info ] [MainThread]:   job_retries: 1
+[0m22:05:11.878860 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:05:11.879022 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:05:11.879181 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:05:11.879437 [info ] [MainThread]:   client_id: None
+[0m22:05:11.879641 [info ] [MainThread]:   token_uri: None
+[0m22:05:11.879812 [info ] [MainThread]:   dataproc_region: None
+[0m22:05:11.879976 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:05:11.880137 [info ] [MainThread]:   gcs_bucket: None
+[0m22:05:11.880312 [info ] [MainThread]:   dataproc_batch: None
+[0m22:05:11.880727 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:05:11.978207 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:05:11.978619 [debug] [MainThread]: On debug: select 1 as id
+[0m22:05:11.978836 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:05:13.458535 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=eigenai&j=bq:US:5cbdba4e-6678-4310-ab2e-926e7aa9ad22&page=queryresults
+[0m22:05:14.285307 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:05:14.286932 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:05:14.288058 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.4725337, "process_in_blocks": "0", "process_kernel_time": 2.744276, "process_mem_max_rss": "228802560", "process_out_blocks": "0", "process_user_time": 1.746836}
+[0m22:05:14.288831 [debug] [MainThread]: Command `dbt debug` succeeded at 22:05:14.288682 after 3.47 seconds
+[0m22:05:14.289398 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:05:14.290017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039cd5a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104387430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14c110c10>]}
+[0m22:05:14.291182 [debug] [MainThread]: Flushing usage events
+[0m22:05:15.409901 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:05:23.519271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ad95a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049b7220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049b40d0>]}
+
+
+============================== 22:05:23.521296 | e240f30d-1b94-4268-8e72-df49b93a35d4 ==============================
+[0m22:05:23.521296 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:05:23.521650 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/ngyibin/.dbt', 'log_path': '/Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:05:24.224623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1287298a0>]}
+[0m22:05:24.254461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1286e2bf0>]}
+[0m22:05:24.254820 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:05:24.359673 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:05:24.360215 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:05:24.360457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1290706a0>]}
+[0m22:05:25.133819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129988310>]}
+[0m22:05:25.192931 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/target/manifest.json
+[0m22:05:25.194910 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/target/semantic_manifest.json
+[0m22:05:25.208404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026c2410>]}
+[0m22:05:25.208706 [info ] [MainThread]: Found 2 models, 5 data tests, 2 sources, 491 macros
+[0m22:05:25.208920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1293eb5b0>]}
+[0m22:05:25.209822 [info ] [MainThread]: 
+[0m22:05:25.210038 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:05:25.210379 [info ] [MainThread]: 
+[0m22:05:25.210684 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:05:25.213053 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_eigenai'
+[0m22:05:25.213445 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:05:26.094446 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:05:26.668367 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_eigenai, now list_eigenai_austin_bikeshare_demo)
+[0m22:05:26.669589 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:05:27.101416 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_eigenai_austin_bikeshare_demo, now list_eigenai_austin_bikeshare_demo_star)
+[0m22:05:27.103337 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:05:27.527495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10495b940>]}
+[0m22:05:27.529169 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:05:27.533206 [debug] [Thread-1 (]: Began running node model.austin_bikeshare_demo.dim_station
+[0m22:05:27.534273 [info ] [Thread-1 (]: 1 of 2 START sql table model austin_bikeshare_demo_star.dim_station ............ [RUN]
+[0m22:05:27.535051 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_eigenai_austin_bikeshare_demo_star, now model.austin_bikeshare_demo.dim_station)
+[0m22:05:27.535536 [debug] [Thread-1 (]: Began compiling node model.austin_bikeshare_demo.dim_station
+[0m22:05:27.546903 [debug] [Thread-1 (]: Writing injected SQL for node "model.austin_bikeshare_demo.dim_station"
+[0m22:05:27.548292 [debug] [Thread-1 (]: Began executing node model.austin_bikeshare_demo.dim_station
+[0m22:05:27.562485 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:05:27.984285 [debug] [Thread-1 (]: Writing runtime sql for node "model.austin_bikeshare_demo.dim_station"
+[0m22:05:27.985309 [debug] [Thread-1 (]: On model.austin_bikeshare_demo.dim_station: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "austin_bikeshare_demo", "target_name": "dev", "node_id": "model.austin_bikeshare_demo.dim_station"} */
+
+  
+    
+
+    create or replace table `eigenai`.`austin_bikeshare_demo_star`.`dim_station`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT DISTINCT
+    station_id,
+    name,
+    status,
+    location,
+    address,
+    alternate_name,
+    city_asset_number,
+    property_type,
+    number_of_docks,
+    power_type,
+    footprint_length,
+    footprint_width,
+    notes,
+    council_district,
+    image,
+    modified_date
+FROM `bigquery-public-data`.`austin_bikeshare`.`bikeshare_stations`
+    );
+  
+[0m22:05:28.771351 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=eigenai&j=bq:US:472d062b-bb10-4c9a-b9f0-bd7d40ba3745&page=queryresults
+[0m22:05:31.451454 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129393550>]}
+[0m22:05:31.452338 [info ] [Thread-1 (]: 1 of 2 OK created sql table model austin_bikeshare_demo_star.dim_station ....... [[32mCREATE TABLE (101.0 rows, 15.0 KiB processed)[0m in 3.91s]
+[0m22:05:31.452940 [debug] [Thread-1 (]: Finished running node model.austin_bikeshare_demo.dim_station
+[0m22:05:31.453346 [debug] [Thread-1 (]: Began running node model.austin_bikeshare_demo.fact_trips
+[0m22:05:31.453869 [info ] [Thread-1 (]: 2 of 2 START sql view model austin_bikeshare_demo.fact_trips ................... [RUN]
+[0m22:05:31.454291 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.austin_bikeshare_demo.dim_station, now model.austin_bikeshare_demo.fact_trips)
+[0m22:05:31.454633 [debug] [Thread-1 (]: Began compiling node model.austin_bikeshare_demo.fact_trips
+[0m22:05:31.457945 [debug] [Thread-1 (]: Writing injected SQL for node "model.austin_bikeshare_demo.fact_trips"
+[0m22:05:31.458611 [debug] [Thread-1 (]: Began executing node model.austin_bikeshare_demo.fact_trips
+[0m22:05:31.474110 [debug] [Thread-1 (]: Writing runtime sql for node "model.austin_bikeshare_demo.fact_trips"
+[0m22:05:31.474770 [debug] [Thread-1 (]: On model.austin_bikeshare_demo.fact_trips: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "austin_bikeshare_demo", "target_name": "dev", "node_id": "model.austin_bikeshare_demo.fact_trips"} */
+
+
+  create or replace view `eigenai`.`austin_bikeshare_demo`.`fact_trips`
+  OPTIONS()
+  as SELECT
+    trip_id,
+    subscriber_type,
+    bike_id,
+    bike_type,
+    start_time,
+    start_station_id,
+    start_station_name,
+    end_station_id,
+    end_station_name,
+    duration_minutes
+FROM `bigquery-public-data`.`austin_bikeshare`.`bikeshare_trips`;
+
+
+[0m22:05:31.475090 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:05:32.307023 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=eigenai&j=bq:US:b1fac890-2521-4a87-a601-df4935258dc3&page=queryresults
+[0m22:05:33.739722 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e240f30d-1b94-4268-8e72-df49b93a35d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1035005b0>]}
+[0m22:05:33.741162 [info ] [Thread-1 (]: 2 of 2 OK created sql view model austin_bikeshare_demo.fact_trips .............. [[32mCREATE VIEW (0 processed)[0m in 2.29s]
+[0m22:05:33.742108 [debug] [Thread-1 (]: Finished running node model.austin_bikeshare_demo.fact_trips
+[0m22:05:33.743986 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:05:33.745149 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:05:33.745595 [debug] [MainThread]: Connection 'model.austin_bikeshare_demo.fact_trips' was properly closed.
+[0m22:05:33.746069 [info ] [MainThread]: 
+[0m22:05:33.746517 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 8.54 seconds (8.54s).
+[0m22:05:33.747556 [debug] [MainThread]: Command end result
+[0m22:05:33.776272 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/target/manifest.json
+[0m22:05:33.778158 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/target/semantic_manifest.json
+[0m22:05:33.783297 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ngyibin/Documents/Documents - Ng’s MacBook Pro (2)/Programs/su-ntu-ctp/5m-data-2.5-data-warehouse/austin_bikeshare_demo/target/run_results.json
+[0m22:05:33.783593 [info ] [MainThread]: 
+[0m22:05:33.783916 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:05:33.784154 [info ] [MainThread]: 
+[0m22:05:33.784452 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m22:05:33.784886 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.3042755, "process_in_blocks": "0", "process_kernel_time": 2.91471, "process_mem_max_rss": "249167872", "process_out_blocks": "0", "process_user_time": 2.750766}
+[0m22:05:33.785208 [debug] [MainThread]: Command `dbt run` succeeded at 22:05:33.785140 after 10.30 seconds
+[0m22:05:33.785500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ad95a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026c2410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1286e2bf0>]}
+[0m22:05:33.785788 [debug] [MainThread]: Flushing usage events
+[0m22:05:35.233366 [debug] [MainThread]: An error was encountered while trying to flush usage events
